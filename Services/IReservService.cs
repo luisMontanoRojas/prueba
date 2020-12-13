@@ -8,7 +8,7 @@ namespace hotelReserv.Services
 {
     public interface IReservService
     {
-        Task<Reserv> CreateReserv(Reserv newReserv);
+        Task<Reserv> CreateReserv(int idHotel, Reserv newReserv);
         Task<IEnumerable<Reserv>> GetReservs(int id);
         Task<Reserv> GetReserv(int id);
         Task<bool> DeleteReserv(int id);

@@ -10,14 +10,14 @@ using hotelReserv.Data;
 namespace hotelReserv.Migrations
 {
     [DbContext(typeof(HotelDbContext))]
-    [Migration("20201212153308_first")]
+    [Migration("20201212174240_first")]
     partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
+                .HasAnnotation("ProductVersion", "2.2.0-rtm-35687")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 

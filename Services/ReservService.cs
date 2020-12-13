@@ -31,8 +31,10 @@ namespace hotelReserv.Services
         }
 
 
-        public async Task<Reserv> CreateReserv(Reserv newReserv)
+        public async Task<Reserv> CreateReserv(int idHotel, Reserv newReserv)
         {
+
+            newReserv.hotelId = idHotel;
             var reservEntity = mapper.Map<ReservEntity>(newReserv);
             hotelRepository.CreateReserv(reservEntity);
             if (await hotelRepository.SaveChangesAsync())
